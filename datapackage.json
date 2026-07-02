@@ -1,0 +1,80 @@
+{
+  "name": "brain-drain-eu",
+  "title": "Brain Drain in Europe 2024",
+  "description": "Net migration of native-born residents across 19 European countries in 2024, plus the main destination countries of German emigrants.",
+  "homepage": "https://www.datapulse.de/brain-drain-eu/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eurostat (migr_emi4ctb, migr_imm3ctb)"
+    },
+    {
+      "title": "Destatis"
+    },
+    {
+      "title": "OECD Taxing Wages 2025"
+    },
+    {
+      "title": "DataPulse Research",
+      "path": "https://www.datapulse.de/brain-drain-eu/"
+    }
+  ],
+  "keywords": [
+    "brain-drain",
+    "migration",
+    "emigration",
+    "europe",
+    "eurostat",
+    "demography",
+    "germany",
+    "open-data"
+  ],
+  "resources": [
+    {
+      "name": "net-migration-native-born-2024",
+      "path": "data/net_migration_native_born_2024.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "net_migration",
+            "type": "integer"
+          },
+          {
+            "name": "per_1000_residents",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "german-emigrant-destinations-2024",
+      "path": "data/german_emigrant_destinations_2024.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "destination_country",
+            "type": "string"
+          },
+          {
+            "name": "annual_flow",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}
